@@ -17,4 +17,5 @@ class Type < ApplicationRecord
     { id: 15, name: '向かい飛車' },
     { id: 16, name: '角交換振り飛車' },
     { id: 17, name: 'その他' }
+  ]
   end

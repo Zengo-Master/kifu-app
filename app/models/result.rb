@@ -5,4 +5,5 @@ class Result < ApplicationRecord
     { id: 3, name: '●' },
     { id: 4, name: '千' },
     { id: 5, name: '持' }
+  ]
 end

@@ -2,7 +2,7 @@ class KifusController < ApplicationController
   before_action :set_kifu, only: [:edit, :show, :destroy, :update]
 
   def index
-    @kifus = Kifu.all('date DESC')
+    @kifus = Kifu.all.order('date DESC')
   end
 
   def new

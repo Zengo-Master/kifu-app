@@ -9,4 +9,5 @@ class Kifu < ApplicationRecord
     validates :result_id, numericality: { other_than: 1 }
     validates :type_id, numericality: { other_than: 1 }
     validates :kifu
+  end
 end
