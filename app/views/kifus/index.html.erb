@@ -7,28 +7,34 @@
   <h1>棋譜一覧</h1>
 
   <div class="kifu-lists">
-    <%= @kifus.each do |kifu| %>
+    <% @kifus.each do |kifu| %>
       <div class="one-kifu">
+
         <%# 日付 %>
         <div class="date">
           <%= kifu.date %>
         </div>
+
         <%# 相手 %>
         <div class="opponent">
-          <%= kifu.opponent.name %>
+          <%= kifu.opponent %>
         </div>
+
         <%# 結果 %>
         <div class="result">
           <%= kifu.result.name %>
         </div>
+
         <%# 戦型 %>
         <div class="type">
           <%= kifu.type.name %>
         </div>
-        <%# 棋譜 %>
-        <div class="kifu">
-          <%= kifu.kifu %>
+
+        <%# 棋譜リンク %>
+        <div class="kifu-page">
+          <%= link_to '棋譜を見る', kifu_path(kifu.id)  %>
         </div>
+
       </div>
     <% end %>
   </div>

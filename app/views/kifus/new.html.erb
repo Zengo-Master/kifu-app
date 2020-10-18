@@ -37,6 +37,10 @@
         <%= f.text_area :kifu, placeholder: '棋譜を貼り付け', size: "40x10"  %>
       </div>
 
+      <div class="submit">
+        <%= f.submit "保存", class: 'submit-btn' %>
+      </div>
+
       <div class="back">
         <%= link_to "棋譜一覧へ戻る", root_path, class: "back-btn" %>
       </div>

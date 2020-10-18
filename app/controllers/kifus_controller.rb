@@ -13,7 +13,7 @@ class KifusController < ApplicationController
     @kifu = Kifu.create(kifu_params)
     if @kifu.valid?
       @kifu.save
-      redirect_to_root_path
+      redirect_to root_path
     else
       render 'new'
     end
