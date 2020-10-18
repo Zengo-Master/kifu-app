@@ -27,7 +27,8 @@ Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Visual Studio Code
 
 | Column      | Type    | Options     |
 | ----------- | ------- | ----------- |
-| kif         | text    | null: false |
-| opponent    | string  | null: false |
-| type_id     | integer | null: false |
 | date        | date    | null: false |
+| opponent    | string  | null: false |
+| result_id   | integer | null: false |
+| type_id     | integer | null: false |
+| kifu        | text    | null: false |
