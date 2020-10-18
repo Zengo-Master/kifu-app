@@ -1,0 +1,19 @@
+<div class="kifu-text">
+  <%= @kifu.kifu %>
+</div>
+
+<div class="edit">
+  <%= link_to "棋譜の編集", edit_kifu_path(@kifu.id), method: :get, class: "edit-btn" %>
+</div>
+
+<div class="destroy">
+  <%= link_to "棋譜の削除", kifu_path(@kifu.id), method: :delete, class: "destroy-btn" %>
+</div>
+
+<div class="analysis">
+  <%= link_to '解析サイトへ', 'https://www.shogi-extend.com/adapter' %>
+</div>
+
+<div class="back">
+  <%= link_to '棋譜一覧へ戻る', root_path, class: "back-btn" %>
+</div>
