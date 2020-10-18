@@ -24,12 +24,12 @@
 
       <div class="input-field">
         <%= f.label :result_id, '結果' %><br />
-        <%= f.text_field :result_id, Result.all, :id, :name, {} %>
+        <%= f.collection_select :result_id, Result.all, :id, :name, {} %>
       </div>
 
       <div class="input-field">
         <%= f.label :type_id, '戦型' %><br />
-        <%= f.text_field :type_id, Type.all, :id, :name, {}  %>
+        <%= f.collection_select :type_id, Type.all, :id, :name, {}  %>
       </div>
 
       <div class="input-field">

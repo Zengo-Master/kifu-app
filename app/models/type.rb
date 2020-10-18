@@ -1,4 +1,4 @@
-class Type < ApplicationRecord
+class Type < ActiveHash::Base
   self.data = [
     { id: 1,  name: '--' },
     { id: 2,  name: '矢倉' },
@@ -18,4 +18,4 @@ class Type < ApplicationRecord
     { id: 16, name: '角交換振り飛車' },
     { id: 17, name: 'その他' }
   ]
-  end
+end
