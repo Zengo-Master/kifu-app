@@ -14,7 +14,16 @@
  *= require_self
  */
 
-/* * {
+* {
   margin: 0px;
   box-sizing: border-box;
-} */
+}
+
+.app-title {
+  margin: 20px;
+}
+
+h1 {
+  width: auto;
+  border-bottom: 2px solid lightgray;
+}
