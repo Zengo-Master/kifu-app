@@ -11,29 +11,29 @@
       <div class="one-kifu">
 
         <%# 日付 %>
-        <div class="date">
+        <span class="date">
           <%= kifu.date %>
-        </div>
+        </span>
 
         <%# 相手 %>
-        <div class="opponent">
+        <span class="opponent">
           <%= kifu.opponent %>
-        </div>
+        </span>
 
         <%# 結果 %>
-        <div class="result">
+        <span class="result">
           <%= kifu.result.name %>
-        </div>
+        </span>
 
         <%# 戦型 %>
-        <div class="type">
+        <span class="type">
           <%= kifu.type.name %>
-        </div>
+        </span>
 
         <%# 棋譜リンク %>
-        <div class="kifu-page">
-          <%= link_to '棋譜を見る', kifu_path(kifu.id)  %>
-        </div>
+        <span class="kifu-page">
+          <%= link_to '棋譜', kifu_path(kifu.id)  %>
+        </span>
 
       </div>
     <% end %>

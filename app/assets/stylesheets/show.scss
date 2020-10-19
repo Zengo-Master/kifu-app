@@ -1,0 +1,41 @@
+.show-wrapper {
+  margin: 20px;
+}
+
+.kifu-text {
+  font-size: 1px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit, .destroy, .analysis {
+  margin-right: 20px;
+}
+
+.edit-btn, .destroy-btn, .analysis-btn {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: yellow;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  color: black;
+}
+
+.destroy-btn {
+  color: red;
+}
+
+.analysis-btn {
+  color: blue;
+}
