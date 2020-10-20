@@ -41,6 +41,10 @@ class KifusController < ApplicationController
     end
   end
 
+  def search
+    @kifus = Kifu.search(params[:keyword])
+  end
+
   private
 
   def kifu_params
