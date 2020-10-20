@@ -1,20 +1,25 @@
 <div class="show-wrapper">
 
   <div class="kifu-text">
-    <%= @kifu.kifu %>
+    <textarea id="fe_text" name="" rows="10" cols="40"><%= @kifu.kifu %></textarea>
+    <button class='my_clip_button' data-clipboard-target='fe_text' data-clipboard-text='Default clipboard text from attribute' id='d_clip_button'>
+      <b>コピー</b>
+    </button>
   </div>
+
+  <strong>※解析は棋譜をコピーしてから押してね</strong>
 
   <div class="btns">
     <div class="edit">
-      <%= link_to "棋譜の編集", edit_kifu_path(@kifu.id), method: :get, class: "edit-btn" %>
+      <%= link_to "編集", edit_kifu_path(@kifu.id), method: :get, class: "edit-btn" %>
     </div>
 
     <div class="destroy">
-      <%= link_to "棋譜の削除", kifu_path(@kifu.id), method: :delete, class: "destroy-btn" %>
+      <%= link_to "削除", kifu_path(@kifu.id), method: :delete, class: "destroy-btn" %>
     </div>
 
     <div class="analysis">
-      <%= link_to '解析サイトへ', 'https://www.shogi-extend.com/adapter', class: "analysis-btn" %>
+      <%= link_to '解析', 'https://www.shogi-extend.com/adapter', class: "analysis-btn" %>
     </div>
   </div>
 

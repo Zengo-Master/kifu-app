@@ -1,10 +1,13 @@
-<div class="whole">
+<div class="new-wrapper">
   <div class="input-forms">
+
+  <h2>＜対局情報入力＞</h2>
+
     <%= form_with(model: @kifu, local: true) do |f| %>
 
-      <%# 対局日 %>
+      <%# 日付 %>
       <div class="input-field">
-        <%= f.label :date, '対局日' %><br />
+        <%= f.label :date, '日付：' %>
         <%= raw sprintf(
                     f.date_select(
                         :date,
@@ -15,26 +18,30 @@
                         date_separator:    '%s'),
                     '年 ', '月 ') + '日'
         %>
-      </div><br>
+      </div>
 
       <div class="input-field">
-        <%= f.label :opponent, '対戦相手' %><br />
+        <%= f.label :opponent, '相手：' %>
         <%= f.text_field :opponent %>
       </div>
 
       <div class="input-field">
-        <%= f.label :result_id, '結果' %><br />
+        <%= f.label :result_id, '結果：' %>
         <%= f.collection_select :result_id, Result.all, :id, :name, {} %>
       </div>
 
       <div class="input-field">
-        <%= f.label :type_id, '戦型' %><br />
+        <%= f.label :type_id, '戦型：' %>
         <%= f.collection_select :type_id, Type.all, :id, :name, {}  %>
       </div>
 
       <div class="input-field">
-        <%= f.label :kifu, '棋譜' %><br />
-        <%= f.text_area :kifu, placeholder: '棋譜を貼り付け', size: "40x10"  %>
+        <%= f.label :kifu, '棋譜' %><br>
+        <%= f.text_area :kifu, placeholder: '棋譜を貼り付け', size: "35x5"  %>
+      </div>
+
+      <div class="submit">
+        <%= f.submit "更新", class: 'submit-btn' %>
       </div>
 
       <div class="back">

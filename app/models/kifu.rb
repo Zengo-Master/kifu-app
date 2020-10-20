@@ -1,4 +1,6 @@
 class Kifu < ApplicationRecord
+  belongs_to :result_search
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :result
   belongs_to_active_hash :type

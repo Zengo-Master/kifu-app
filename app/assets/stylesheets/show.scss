@@ -2,11 +2,6 @@
   margin: 20px;
 }
 
-.kifu-text {
-  font-size: 1px;
-  padding: 5px;
-  border: 1px solid black;
-}
 
 .btns {
   display: flex;
@@ -14,7 +9,7 @@
   margin-top: 20px;
 }
 
-.edit, .destroy, .analysis {
+.edit, .destroy, .analysis, .copy {
   margin-right: 20px;
 }
 

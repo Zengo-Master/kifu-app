@@ -56,3 +56,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'active_hash'
+gem 'zeroclipboard-rails'
+gem 'jquery-rails'
+gem 'ransack'
