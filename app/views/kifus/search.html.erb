@@ -6,9 +6,8 @@
 
   <h2>＜棋譜検索＞</h2>
   <%= form_with(url: search_kifus_path, local: true, method: :get, class: "search-form") do |f| %>
-    <%= f.label :date, '相手：' %>
-    <%= f.text_field :keyword, placeholder: "", class: "search-input" %>
-    <%= f.submit "検索", class: "search-btn" %>
+    <%= f.text_field :keyword, placeholder: "対戦相手", class: "search-input" %>
+    <%= f.submit "🔎", class: "search-btn" %>
   <% end %>
 
   <h2>＜棋譜一覧＞</h2>
