@@ -9,7 +9,7 @@ class Type < ActiveHash::Base
     { id: 7,  name: '角換わり右玉' },
     { id: 8,  name: '一手損角換わり' },
     { id: 9,  name: '相掛かり' },
-    { id: 10,  name: '雁木' },
+    { id: 10, name: '雁木' },
     { id: 11, name: '嬉野流' },
     { id: 12, name: '中飛車' },
     { id: 13, name: '四間飛車' },

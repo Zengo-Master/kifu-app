@@ -11,9 +11,34 @@ h2 {
 }
 
 .kifu-lists {
+  width: 550px;
   margin-top: 5px;
 }
 
 .one-kifu {
-  font-size: 18px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  font-size: 20px;
+  position: relative;
+}
+
+.opponent {
+  left: 150px;
+  position: absolute;
+}
+
+.result {
+  left: 250px;
+  position: absolute;  
+}
+
+.type {
+  left: 300px;
+  position: absolute;  
+}
+
+.kifu-page {
+  right: 10px;
+  position: absolute;
 }
