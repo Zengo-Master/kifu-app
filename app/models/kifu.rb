@@ -13,7 +13,7 @@ class Kifu < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      Kifu.where('opponent LIKE(?)', "%#{search}%")
+      Kifu.where('opponent LIKE(?)', "%#{search[:keyword]}%").where(result_id: search[:result]).where(type_id: search[:type])
     else
       Kifu.all
     end
